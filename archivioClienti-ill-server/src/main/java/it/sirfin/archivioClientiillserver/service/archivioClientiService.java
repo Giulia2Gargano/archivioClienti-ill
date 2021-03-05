@@ -5,10 +5,7 @@
  */
 package it.sirfin.archivioClientiillserver.service;
 
-/**
- *
- * @author Admin
- */
-public interface archivioClientiService {
+
+public interface ArchivioClientiService {
     
 }

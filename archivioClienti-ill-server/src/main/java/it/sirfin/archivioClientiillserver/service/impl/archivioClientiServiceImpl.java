@@ -5,10 +5,9 @@
  */
 package it.sirfin.archivioClientiillserver.service.impl;
 
-/**
- *
- * @author Admin
- */
-public class archivioClientiServiceImpl {
+import org.springframework.stereotype.Service;
+
+@Service
+public class ArchivioClientiServiceImpl {
     
 }

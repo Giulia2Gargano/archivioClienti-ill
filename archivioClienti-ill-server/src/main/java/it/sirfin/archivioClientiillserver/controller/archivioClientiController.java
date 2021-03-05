@@ -5,10 +5,13 @@
  */
 package it.sirfin.archivioClientiillserver.controller;
 
-/**
- *
- * @author Admin
- */
-public class archivioClientiController {
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+
+@CrossOrigin("*")
+@RestController
+public class ArchivioClientiController {
+
+    
     
 }
