@@ -1,15 +1,16 @@
 <input type="text" [(ngModel)]="cliente.codice" placeholder="codice">
 <input type="text" [(ngModel)]="cliente.ragioneSociale" placeholder="ragionesociale">
 <input type="text" [(ngModel)]="cliente.indirizzo" placeholder="indirizzo">
-
-<button (click)="aggiungi()">Aggiungi</button>
-<br>
-<input type="text" [(ngModel)]="search" placeholder="ricerca">
-<button (click)="ricerca()">Ricerca</button>
-<br>
-<br>
-<button (click)="aggiorna()">Aggiorna</button>
-<br>
+<div *ngIf="stato==''">
+    <button (click)="aggiungi()">Aggiungi</button>
+    <br>
+    <input type="text" [(ngModel)]="search" placeholder="ricerca">
+    <button (click)="ricerca()">Ricerca</button>
+    <br>
+    <br>
+    <button (click)="aggiorna()">Aggiorna</button>
+    <br>
+</div>
 <table>
     <tr>
         <th>Codice</th>
