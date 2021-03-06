@@ -37,4 +37,10 @@ public class ArchivioClientiServiceImpl implements ArchivioClientiService {
         return aggiorna();
     }
 
+    @Override
+    public ListaClienti ricerca(String ricerca) {
+        List<Cliente> ric= archivioClientiRepository.findByCodiceContainsOrRagioneSocialeContainsOrIndirizzoContains(ricerca, ricerca, ricerca);
+        return new ListaClienti(ric);
+    }
+
 }

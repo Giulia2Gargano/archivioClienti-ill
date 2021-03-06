@@ -7,6 +7,7 @@ package it.sirfin.archivioClientiillserver.controller;
 
 import it.sirfin.archivioClientiillserver.dto.ClienteDto;
 import it.sirfin.archivioClientiillserver.dto.ListaClienti;
+import it.sirfin.archivioClientiillserver.dto.RicercaDto;
 import it.sirfin.archivioClientiillserver.service.ArchivioClientiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -38,5 +39,11 @@ public class ArchivioClientiController {
     @ResponseBody
     public ListaClienti rimuovi(@RequestBody ClienteDto rim) {
        return archivioClientiService.rimuovi(rim.getCliente());
+    }
+    
+    @RequestMapping ("/ricerca")
+    @ResponseBody
+    public ListaClienti ricerca(@RequestBody RicercaDto stringa) {
+     return archivioClientiService.ricerca(stringa.getRicerca());
     }
 }

@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Cliente } from './cliente';
 import { ClienteDto } from './cliente-dto';
 import { ListaClientiDto } from './lista-clienti-dto';
+import { RicercaDto } from './ricerca-dto';
 
 @Component({
   selector: 'app-root',
@@ -23,10 +24,17 @@ export class AppComponent {
       .subscribe(r =>
         this.clienti = r.listaClienti
       );
+      this.cliente=new Cliente();
+      this.search="";
   }
 
   ricerca() {
-
+    let ric = new RicercaDto();
+    ric.ricerca = this.search;
+    this.http.post<ListaClientiDto>("http://localhost:8080/ricerca", ric)
+      .subscribe(r =>
+        this.clienti = r.listaClienti
+      );
   }
 
   aggiorna() {
@@ -38,8 +46,8 @@ export class AppComponent {
     let rim = new ClienteDto();
     rim.cliente = c;
     this.http.post<ListaClientiDto>("http://localhost:8080/rimuovi", rim)
-    .subscribe(r =>
-      this.clienti = r.listaClienti);
+      .subscribe(r =>
+        this.clienti = r.listaClienti);
   }
 
   seleziona() {
