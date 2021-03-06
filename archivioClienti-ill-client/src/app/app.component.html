@@ -1,6 +1,7 @@
 <input type="text" [(ngModel)]="cliente.codice" placeholder="codice">
 <input type="text" [(ngModel)]="cliente.ragioneSociale" placeholder="ragionesociale">
 <input type="text" [(ngModel)]="cliente.indirizzo" placeholder="indirizzo">
+
 <button (click)="aggiungi()">Aggiungi</button>
 <br>
 <input type="text" [(ngModel)]="search" placeholder="ricerca">
@@ -19,7 +20,13 @@
         <td>{{c.codice}}</td>
         <td>{{c.ragioneSociale}}</td>
         <td>{{c.indirizzo}}</td>
-        <td><button (click)="rimuovi(c)">Rimuovi</button></td>
-        <td><button (click)="seleziona()">Seleziona</button></td>
+        <div *ngIf="stato==''">
+            <td><button (click)="rimuovi(c)">Rimuovi</button></td>
+            <td><button (click)="seleziona(c)">Seleziona</button></td>
+        </div>
+        <div *ngIf="stato=='confan'">
+            <td><button (click)="conferma(c)">Conferma</button></td>
+            <td><button (click)="annulla(c)">Annulla</button></td>
+        </div>
     </tr>
 </table>

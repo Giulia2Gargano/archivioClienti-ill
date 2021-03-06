@@ -34,16 +34,28 @@ public class ArchivioClientiController {
     public ListaClienti aggiorna() {
         return archivioClientiService.aggiorna();
     }
-    
-    @RequestMapping ("/rimuovi")
+
+    @RequestMapping("/rimuovi")
     @ResponseBody
     public ListaClienti rimuovi(@RequestBody ClienteDto rim) {
-       return archivioClientiService.rimuovi(rim.getCliente());
+        return archivioClientiService.rimuovi(rim.getCliente());
     }
-    
-    @RequestMapping ("/ricerca")
+
+    @RequestMapping("/ricerca")
     @ResponseBody
     public ListaClienti ricerca(@RequestBody RicercaDto stringa) {
-     return archivioClientiService.ricerca(stringa.getRicerca());
+        return archivioClientiService.ricerca(stringa.getRicerca());
+    }
+
+    @RequestMapping("/confan")
+    @ResponseBody
+    public ListaClienti confan(@RequestBody ClienteDto dto) {
+        return archivioClientiService.confan(dto.getCliente());
+    }
+
+    @RequestMapping("/seleziona")
+    @ResponseBody
+    public ClienteDto seleziona(@RequestBody ClienteDto dto) {
+        return archivioClientiService.seleziona(dto.getCliente());
     }
 }

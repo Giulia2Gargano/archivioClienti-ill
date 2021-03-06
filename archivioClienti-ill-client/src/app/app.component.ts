@@ -14,6 +14,8 @@ export class AppComponent {
   cliente = new Cliente();
   clienti: Cliente[] = [];
   search = "";
+  stato = "";
+  contenitore = new Cliente();
 
   constructor(private http: HttpClient) { }
 
@@ -24,8 +26,8 @@ export class AppComponent {
       .subscribe(r =>
         this.clienti = r.listaClienti
       );
-      this.cliente=new Cliente();
-      this.search="";
+    this.cliente = new Cliente();
+    this.search = "";
   }
 
   ricerca() {
@@ -50,7 +52,24 @@ export class AppComponent {
         this.clienti = r.listaClienti);
   }
 
-  seleziona() {
+  seleziona(c: Cliente) {
+    this.stato = "confan";
+    let dto = new ClienteDto();
+    dto.cliente = c;
+    this.http.post<ClienteDto>("http://localhost:8080/seleziona", dto)
+      .subscribe(r => this.cliente = r.cliente)
+  }
 
+  conferma() {
+    this.stato = "";
+    let dto = new ClienteDto();
+    dto.cliente = this.cliente;
+    this.http.post<ListaClientiDto>("http://localhost:8080/confan", dto)
+      .subscribe(r => this.clienti = r.listaClienti)
+    this.cliente = new Cliente();
+  }
+  annulla() {
+    this.stato = "";
+    this.cliente = new Cliente();
   }
 }
