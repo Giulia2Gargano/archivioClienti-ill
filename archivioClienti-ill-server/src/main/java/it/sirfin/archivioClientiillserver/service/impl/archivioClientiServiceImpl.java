@@ -7,6 +7,7 @@ package it.sirfin.archivioClientiillserver.service.impl;
 
 import it.sirfin.archivioClientiillserver.dto.ClienteDto;
 import it.sirfin.archivioClientiillserver.dto.ListaClienti;
+import it.sirfin.archivioClientiillserver.dto.RicercaDto;
 import it.sirfin.archivioClientiillserver.model.Cliente;
 import it.sirfin.archivioClientiillserver.repository.ArchivioClientiRepository;
 import it.sirfin.archivioClientiillserver.service.ArchivioClientiService;
@@ -30,6 +31,12 @@ public class ArchivioClientiServiceImpl implements ArchivioClientiService {
     public ListaClienti aggiorna() {
         List<Cliente> l = archivioClientiRepository.findAll();
         return new ListaClienti(l);
+    }
+
+    @Override
+    public ListaClienti aggiornaFiltrato(String ricerca) {
+        List<Cliente> ric = archivioClientiRepository.findByCodiceContainsOrRagioneSocialeContainsOrIndirizzoContains(ricerca, ricerca, ricerca);
+        return new ListaClienti(ric);
     }
 
     @Override

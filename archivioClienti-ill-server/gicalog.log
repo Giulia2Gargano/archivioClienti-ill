@@ -1952,3 +1952,127 @@ it.sirfin.archivioClientiillserver.controller.ArchivioClientiController#selezion
 2021-03-06 23:30:42.094 TRACE 7164 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - []
 2021-03-06 23:30:42.094 TRACE 7164 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [37]
 2021-03-06 23:30:42.101 DEBUG 7164 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_
+2021-03-06 23:45:40.323  WARN 10296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-06 23:45:50.279 DEBUG 10296 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-06 23:45:50.292 DEBUG 10296 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-06 23:45:50.311 DEBUG 10296 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into cliente (codice, indirizzo, ragione_sociale, id) values (?, ?, ?, ?)
+2021-03-06 23:45:50.313 TRACE 10296 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Cane]
+2021-03-06 23:45:50.314 TRACE 10296 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - []
+2021-03-06 23:45:50.314 TRACE 10296 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - []
+2021-03-06 23:45:50.314 TRACE 10296 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [38]
+2021-03-06 23:45:50.392 DEBUG 10296 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_
+2021-03-06 23:45:53.743 DEBUG 10296 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-06 23:45:53.743 DEBUG 10296 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-06 23:45:53.749 DEBUG 10296 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into cliente (codice, indirizzo, ragione_sociale, id) values (?, ?, ?, ?)
+2021-03-06 23:45:53.750 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Gatto]
+2021-03-06 23:45:53.750 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - []
+2021-03-06 23:45:53.750 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - []
+2021-03-06 23:45:53.750 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [39]
+2021-03-06 23:45:53.754 DEBUG 10296 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_
+2021-03-06 23:45:56.713 DEBUG 10296 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-06 23:45:56.713 DEBUG 10296 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-06 23:45:56.719 DEBUG 10296 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into cliente (codice, indirizzo, ragione_sociale, id) values (?, ?, ?, ?)
+2021-03-06 23:45:56.720 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Topo]
+2021-03-06 23:45:56.720 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - []
+2021-03-06 23:45:56.720 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - []
+2021-03-06 23:45:56.720 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [40]
+2021-03-06 23:45:56.725 DEBUG 10296 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_
+2021-03-06 23:45:59.073 DEBUG 10296 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:45:59.074 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%c%]
+2021-03-06 23:45:59.074 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:45:59.075 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%c%]
+2021-03-06 23:45:59.075 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:45:59.075 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%c%]
+2021-03-06 23:45:59.075 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:46:00.431 DEBUG 10296 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:46:00.432 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%c%]
+2021-03-06 23:46:00.432 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:46:00.432 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%c%]
+2021-03-06 23:46:00.433 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:46:00.433 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%c%]
+2021-03-06 23:46:00.433 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:46:01.162 DEBUG 10296 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:46:01.163 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%c%]
+2021-03-06 23:46:01.163 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:46:01.163 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%c%]
+2021-03-06 23:46:01.163 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:46:01.163 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%c%]
+2021-03-06 23:46:01.164 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:46:03.056 DEBUG 10296 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:46:03.057 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%%]
+2021-03-06 23:46:03.057 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:46:03.057 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%%]
+2021-03-06 23:46:03.057 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:46:03.057 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%%]
+2021-03-06 23:46:03.058 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:01.587 DEBUG 10296 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:01.588 TRACE 10296 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%t%]
+2021-03-06 23:47:01.588 TRACE 10296 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:01.588 TRACE 10296 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%t%]
+2021-03-06 23:47:01.588 TRACE 10296 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:01.588 TRACE 10296 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%t%]
+2021-03-06 23:47:01.589 TRACE 10296 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:12.618 DEBUG 10296 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-06 23:47:12.618 DEBUG 10296 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-06 23:47:12.626 DEBUG 10296 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into cliente (codice, indirizzo, ragione_sociale, id) values (?, ?, ?, ?)
+2021-03-06 23:47:12.627 TRACE 10296 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Tatto]
+2021-03-06 23:47:12.627 TRACE 10296 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - []
+2021-03-06 23:47:12.627 TRACE 10296 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - []
+2021-03-06 23:47:12.627 TRACE 10296 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [41]
+2021-03-06 23:47:12.632 DEBUG 10296 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_
+2021-03-06 23:47:16.078 DEBUG 10296 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:16.078 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%t%]
+2021-03-06 23:47:16.079 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:16.079 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%t%]
+2021-03-06 23:47:16.079 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:16.079 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%t%]
+2021-03-06 23:47:16.079 TRACE 10296 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:16.938 DEBUG 10296 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:16.938 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%t%]
+2021-03-06 23:47:16.939 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:16.939 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%t%]
+2021-03-06 23:47:16.939 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:16.939 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%t%]
+2021-03-06 23:47:16.939 TRACE 10296 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:17.351 DEBUG 10296 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:17.351 TRACE 10296 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.351 TRACE 10296 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:17.351 TRACE 10296 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.351 TRACE 10296 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:17.352 TRACE 10296 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.352 TRACE 10296 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:17.672 DEBUG 10296 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:17.672 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.672 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:17.672 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.672 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:17.673 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.673 TRACE 10296 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:17.937 DEBUG 10296 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:17.938 TRACE 10296 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.938 TRACE 10296 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:17.938 TRACE 10296 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.938 TRACE 10296 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:17.938 TRACE 10296 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%t%]
+2021-03-06 23:47:17.939 TRACE 10296 --- [http-nio-8080-exec-6] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:18.138 DEBUG 10296 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:18.139 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%t%]
+2021-03-06 23:47:18.139 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:18.139 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%t%]
+2021-03-06 23:47:18.139 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:18.139 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%t%]
+2021-03-06 23:47:18.140 TRACE 10296 --- [http-nio-8080-exec-7] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:24.168 DEBUG 10296 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:24.168 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%ta%]
+2021-03-06 23:47:24.168 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:24.168 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%ta%]
+2021-03-06 23:47:24.169 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:24.169 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%ta%]
+2021-03-06 23:47:24.169 TRACE 10296 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]
+2021-03-06 23:47:31.360 DEBUG 10296 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_ where cliente0_.codice like ? escape ? or cliente0_.ragione_sociale like ? escape ? or cliente0_.indirizzo like ? escape ?
+2021-03-06 23:47:31.361 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [%%]
+2021-03-06 23:47:31.361 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [CHAR] - [\]
+2021-03-06 23:47:31.361 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [%%]
+2021-03-06 23:47:31.362 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [CHAR] - [\]
+2021-03-06 23:47:31.362 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [%%]
+2021-03-06 23:47:31.362 TRACE 10296 --- [http-nio-8080-exec-9] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [CHAR] - [\]

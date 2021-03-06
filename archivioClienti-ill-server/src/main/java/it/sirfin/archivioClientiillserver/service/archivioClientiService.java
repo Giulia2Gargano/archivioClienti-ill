@@ -16,6 +16,8 @@ public interface ArchivioClientiService {
 
     ListaClienti aggiorna();
 
+    ListaClienti aggiornaFiltrato(String ricerca);
+
     ListaClienti rimuovi(Cliente rim);
 
     ListaClienti ricerca(String ricerca);

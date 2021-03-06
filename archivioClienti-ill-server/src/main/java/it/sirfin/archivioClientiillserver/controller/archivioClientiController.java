@@ -31,8 +31,8 @@ public class ArchivioClientiController {
 
     @RequestMapping("/aggiorna")
     @ResponseBody
-    public ListaClienti aggiorna() {
-        return archivioClientiService.aggiorna();
+    public ListaClienti aggiorna(@RequestBody RicercaDto dto) {
+        return archivioClientiService.aggiornaFiltrato(dto.getRicerca());
     }
 
     @RequestMapping("/rimuovi")

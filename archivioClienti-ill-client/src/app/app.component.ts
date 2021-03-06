@@ -40,7 +40,9 @@ export class AppComponent {
   }
 
   aggiorna() {
-    this.http.get<ListaClientiDto>("http://localhost:8080/aggiorna")
+    let ric = new RicercaDto();
+    ric.ricerca = this.search;
+    this.http.post<ListaClientiDto>("http://localhost:8080/aggiorna", ric)
       .subscribe(r => this.clienti = r.listaClienti);
   }
 
