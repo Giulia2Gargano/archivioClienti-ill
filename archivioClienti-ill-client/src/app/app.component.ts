@@ -17,7 +17,9 @@ export class AppComponent {
   stato = "";
   contenitore = new Cliente();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.aggiorna();
+  }
 
   aggiungi() {
     let dto = new ClienteDto();
