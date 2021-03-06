@@ -9,11 +9,12 @@ import it.sirfin.archivioClientiillserver.dto.ListaClienti;
 import it.sirfin.archivioClientiillserver.model.Cliente;
 import it.sirfin.archivioClientiillserver.repository.ArchivioClientiRepository;
 import it.sirfin.archivioClientiillserver.service.ArchivioClientiService;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ArchivioClientiServiceImpl implements ArchivioClientiService{
+public class ArchivioClientiServiceImpl implements ArchivioClientiService {
 
     @Autowired
     ArchivioClientiRepository archivioClientiRepository;
@@ -21,6 +22,12 @@ public class ArchivioClientiServiceImpl implements ArchivioClientiService{
     @Override
     public ListaClienti aggiungi(Cliente cli) {
         archivioClientiRepository.save(cli);
-        return new ListaClienti();
+        return aggiorna();
+    }
+
+    @Override
+    public ListaClienti aggiorna() {
+        List<Cliente> l = archivioClientiRepository.findAll();
+        return new ListaClienti(l);
     }
 }

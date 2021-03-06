@@ -24,9 +24,14 @@ public class ArchivioClientiController {
 
     @RequestMapping("/aggiungi")
     @ResponseBody
-
     public ListaClienti aggiungi(@RequestBody ClienteDto dto) {
         return archivioClientiService.aggiungi(dto.getCliente());
+    }
+
+    @RequestMapping("/aggiorna")
+    @ResponseBody
+    public ListaClienti aggiorna() {
+        return archivioClientiService.aggiorna();
     }
 
 }

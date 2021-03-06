@@ -1139,3 +1139,32 @@ Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.
 2021-03-06 12:21:53.433 TRACE 12368 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [trhrthtr]
 2021-03-06 12:21:53.433 TRACE 12368 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [trhrthtrh]
 2021-03-06 12:21:53.436 TRACE 12368 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [8]
+2021-03-06 12:30:25.922 DEBUG 10256 --- [main] org.hibernate.SQL                        : create table cliente (id bigint not null, codice varchar(255), indirizzo varchar(255), ragione_sociale varchar(255), primary key (id)) engine=InnoDB
+2021-03-06 12:30:25.958 DEBUG 10256 --- [main] org.hibernate.SQL                        : create table hibernate_sequence (next_val bigint) engine=InnoDB
+2021-03-06 12:30:25.988 DEBUG 10256 --- [main] org.hibernate.SQL                        : insert into hibernate_sequence values ( 1 )
+2021-03-06 12:30:26.202  WARN 10256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-06 12:30:30.243 DEBUG 10256 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-06 12:30:30.252 DEBUG 10256 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-06 12:30:30.271 DEBUG 10256 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into cliente (codice, indirizzo, ragione_sociale, id) values (?, ?, ?, ?)
+2021-03-06 12:30:30.273 TRACE 10256 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [fwefwe]
+2021-03-06 12:30:30.273 TRACE 10256 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - []
+2021-03-06 12:30:30.273 TRACE 10256 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - []
+2021-03-06 12:30:30.274 TRACE 10256 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [1]
+2021-03-06 12:30:30.352 DEBUG 10256 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_
+2021-03-06 12:30:34.891 DEBUG 10256 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-06 12:30:34.892 DEBUG 10256 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-06 12:30:34.900 DEBUG 10256 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into cliente (codice, indirizzo, ragione_sociale, id) values (?, ?, ?, ?)
+2021-03-06 12:30:34.900 TRACE 10256 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [fwefwewfewfe]
+2021-03-06 12:30:34.901 TRACE 10256 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - []
+2021-03-06 12:30:34.901 TRACE 10256 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - []
+2021-03-06 12:30:34.901 TRACE 10256 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [2]
+2021-03-06 12:30:34.905 DEBUG 10256 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_
+2021-03-06 12:30:38.199 DEBUG 10256 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-03-06 12:30:38.200 DEBUG 10256 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-03-06 12:30:38.206 DEBUG 10256 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into cliente (codice, indirizzo, ragione_sociale, id) values (?, ?, ?, ?)
+2021-03-06 12:30:38.207 TRACE 10256 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [fwefwewfewfefwefwe]
+2021-03-06 12:30:38.207 TRACE 10256 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [wefew]
+2021-03-06 12:30:38.207 TRACE 10256 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [VARCHAR] - [weffwe]
+2021-03-06 12:30:38.207 TRACE 10256 --- [http-nio-8080-exec-5] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [BIGINT] - [3]
+2021-03-06 12:30:38.212 DEBUG 10256 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_
+2021-03-06 12:30:40.783 DEBUG 10256 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select cliente0_.id as id1_0_, cliente0_.codice as codice2_0_, cliente0_.indirizzo as indirizz3_0_, cliente0_.ragione_sociale as ragione_4_0_ from cliente cliente0_

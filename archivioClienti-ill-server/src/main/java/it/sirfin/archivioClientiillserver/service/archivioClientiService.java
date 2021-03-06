@@ -12,4 +12,6 @@ import java.util.List;
 public interface ArchivioClientiService {
 
     ListaClienti aggiungi(Cliente cli);
+
+    ListaClienti aggiorna();
 }

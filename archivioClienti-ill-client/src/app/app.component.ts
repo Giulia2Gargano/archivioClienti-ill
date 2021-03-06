@@ -30,7 +30,8 @@ export class AppComponent {
   }
 
   aggiorna() {
-
+    this.http.get<ListaClientiDto>("http://localhost:8080/aggiorna")
+      .subscribe(r => this.clienti = r.listaClienti)
   }
 
   rimuovi() {
