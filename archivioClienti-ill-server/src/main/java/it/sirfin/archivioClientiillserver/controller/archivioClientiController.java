@@ -33,5 +33,10 @@ public class ArchivioClientiController {
     public ListaClienti aggiorna() {
         return archivioClientiService.aggiorna();
     }
-
+    
+    @RequestMapping ("/rimuovi")
+    @ResponseBody
+    public ListaClienti rimuovi(@RequestBody ClienteDto rim) {
+       return archivioClientiService.rimuovi(rim.getCliente());
+    }
 }

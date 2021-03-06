@@ -31,11 +31,15 @@ export class AppComponent {
 
   aggiorna() {
     this.http.get<ListaClientiDto>("http://localhost:8080/aggiorna")
-      .subscribe(r => this.clienti = r.listaClienti)
+      .subscribe(r => this.clienti = r.listaClienti);
   }
 
-  rimuovi() {
-
+  rimuovi(c: Cliente) {
+    let rim = new ClienteDto();
+    rim.cliente = c;
+    this.http.post<ListaClientiDto>("http://localhost:8080/rimuovi", rim)
+    .subscribe(r =>
+      this.clienti = r.listaClienti);
   }
 
   seleziona() {

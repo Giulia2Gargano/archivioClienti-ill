@@ -30,4 +30,11 @@ public class ArchivioClientiServiceImpl implements ArchivioClientiService {
         List<Cliente> l = archivioClientiRepository.findAll();
         return new ListaClienti(l);
     }
+
+    @Override
+    public ListaClienti rimuovi(Cliente rim) {
+        archivioClientiRepository.delete(rim);
+        return aggiorna();
+    }
+
 }

@@ -8,10 +8,13 @@ package it.sirfin.archivioClientiillserver.service;
 import it.sirfin.archivioClientiillserver.dto.ListaClienti;
 import it.sirfin.archivioClientiillserver.model.Cliente;
 import java.util.List;
+import org.springframework.web.bind.annotation.RequestBody;
 
 public interface ArchivioClientiService {
 
     ListaClienti aggiungi(Cliente cli);
 
     ListaClienti aggiorna();
+    
+    ListaClienti rimuovi(Cliente rim);
 }
