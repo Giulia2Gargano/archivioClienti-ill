@@ -11,6 +11,10 @@
     <button (click)="aggiorna()">Aggiorna</button>
     <br>
 </div>
+<div *ngIf="stato=='confan'">
+    <td><button (click)="conferma()">Conferma</button></td>
+    <td><button (click)="annulla()">Annulla</button></td>
+</div>
 <table>
     <tr>
         <th>Codice</th>
@@ -24,10 +28,6 @@
         <div *ngIf="stato==''">
             <td><button (click)="rimuovi(c)">Rimuovi</button></td>
             <td><button (click)="seleziona(c)">Seleziona</button></td>
-        </div>
-        <div *ngIf="stato=='confan'">
-            <td><button (click)="conferma(c)">Conferma</button></td>
-            <td><button (click)="annulla(c)">Annulla</button></td>
         </div>
     </tr>
 </table>
